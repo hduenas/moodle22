@@ -16,7 +16,7 @@ $CFG->dboptions = array (
   'dbsocket' => 0,
 );
 
-$CFG->wwwroot   = 'http://moodle22.pagodabox.com';
+$CFG->wwwroot   = $_SERVER['SERVER_NAME']; //'http://moodle22.pagodabox.com';
 $CFG->dataroot  = '/var/www/moodledata';
 $CFG->admin     = 'admin';
 
