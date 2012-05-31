@@ -1,0 +1,24 @@
+web1:
+  name: moodle19
+  shared_writable_dirs:
+    - /moodledata
+  document_root: /moodle
+  php_error_reporting: 30719
+  php_display_errors: "1"
+  php_extensions:
+    - curl
+    - gd
+    - mbstring
+    - mysql
+    - mysqli
+    - xmlrpc
+    - zip
+  before_deploy:
+    - "php scripts/strictoff.php"
+  web1:
+    cron:
+      - "*/15 * * * *": "php admin/cron.php"
+
+db1:
+  name: moodle
+  type: mysql
