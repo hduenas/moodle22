@@ -6,10 +6,10 @@ $CFG = new stdClass();
 
 $CFG->dbtype    = 'mysqli';
 $CFG->dblibrary = 'native';
-$CFG->dbhost    = 'tunnel.pagodabox.com';
-$CFG->dbname    = 'moodle';
-$CFG->dbuser    = 'minerva';
-$CFG->dbpass    = 'Cu8cN9A6';
+$CFG->dbhost    = $_SERVER["DB1_HOST"];
+$CFG->dbname    = $_SERVER["DB1_NAME"];
+$CFG->dbuser    = $_SERVER["DB1_USER"];
+$CFG->dbpass    = $_SERVER["DB1_PASS"] ;
 $CFG->prefix    = 'mdl_';
 $CFG->dboptions = array (
   'dbpersist' => 0,

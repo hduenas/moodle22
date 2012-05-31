@@ -8,9 +8,11 @@ web1:
   php_extensions:
     - curl
     - gd
+    - intl
     - mbstring
     - mysql
     - mysqli
+    - soap
     - xmlrpc
     - zip
   before_deploy:
