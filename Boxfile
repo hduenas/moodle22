@@ -3,8 +3,6 @@ web1:
   shared_writable_dirs:
     - /moodledata
   document_root: /moodle
-  php_error_reporting: 30719
-  php_display_errors: "1"
   php_extensions:
     - curl
     - gd
