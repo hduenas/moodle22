@@ -17,7 +17,7 @@ web1:
     - "php scripts/strictoff.php"
   web1:
     cron:
-      - "*/15 * * * *": "php admin/cron.php"
+      - "*/15 * * * *": "php moodle/admin/cli/cron.php"
 
 db1:
   name: moodle
